@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shop online</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <h1 class="logo">logo</h1>
-            <nav class="nav">
-                <ul>
-                        <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-                    <li>    
-                        <a href="#">Cart</a>
-                    </li>           
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2>Category Title</h2>
-            <div>
-                <div class="product">
-                    <img src="https://via.placeholder.com/150" alt="Product Image">
-                    <h3>Product Name</h3>
-                    <p>Product Description</p>
-                    <p>Price: $XX.XX</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="https://via.placeholder.com/150" alt="Product Image">
-                    <h3>Product Name</h3>
-                    <p>Product Description</p>
-                    <p>Price: $XX.XX</p>
-                    <div>
-                        <button id="showCart">add to cart</button>
-                        <div id="cartWindow" class="cart-window">
-  <div class="cart-content">
-    <!-- Contenido del carrito aquí -->
-    <h2>Carrito de Compras</h2>
-    <p>¡Aquí irán los productos agregados!</p>
-  </div>
-  <button id="closeCart">Cerrar Carrito</button>
-</div>
-                    </div>
-                </div></div>
-                 
-        </main>
-        <footer>
-<p> Copyright by Agustin Belizan</p>
-        </footer>
-    </div>
-        <script>
-        const showCartButton = document.getElementById('showCart');
-        const cartWindow = document.getElementById('cartWindow');
-        const closeCartButton = document.getElementById('closeCart');
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-        showCartButton.addEventListener('click', () => {
-            cartWindow.style.display = 'block';
-        });
-        closeCartButton.addEventListener('click', () => {
-            cartWindow.style.display = 'none';
-        });
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="logo">logo</h1>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Products</a>
+            </li>
+            <li>
+              <a href="#">Cart</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2>Category Title</h2>
+        <div>
+          <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product Image" />
+            <h3>Product Name</h3>
+            <p>Product Description</p>
+            <p>Price: $XX.XX</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product Image" />
+            <h3>Product Name</h3>
+            <p>Product Description</p>
+            <p>Price: $XX.XX</p>
+            <div>
+              <button id="showCart">add to cart</button>
+              <div id="cartWindow" class="cart-window">
+                <div class="cart-content">
+                  <!-- Contenido del carrito aquí -->
+                  <h2>Carrito de Compras</h2>
+                  <p>¡Aquí irán los productos agregados!</p>
+                </div>
+                <button id="closeCart">Cerrar Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>Copyright by Agustin Belizan</p>
+      </footer>
+    </div>
+    <script>
+      const showCartButton = document.getElementById("showCart");
+      const cartWindow = document.getElementById("cartWindow");
+      const closeCartButton = document.getElementById("closeCart");
+
+      showCartButton.addEventListener("click", () => {
+        cartWindow.style.display = "block";
+      });
+      closeCartButton.addEventListener("click", () => {
+        cartWindow.style.display = "none";
+      });
     </script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
