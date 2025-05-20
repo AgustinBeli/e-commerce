@@ -2,74 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shop online</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09f" />
+    <meta
+      name="description"
+      content="Página de ventas de distintos productos multiplataforma"
+    />
+    <title>Shopping</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/jpg" href="" />
   </head>
-
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="logo">logo</h1>
-        <nav class="nav">
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Products</a>
-            </li>
-            <li>
-              <a href="#">Cart</a>
-            </li>
-          </ul>
-        </nav>
+    <div class="layout">
+      <!-- mi barra navegadora de opciones -->
+
+      <header class="navigator">
+        <img src="./img/Ejemplo-de-Imagen.jpg" alt="logo" />
+        <ul>
+          <li>category</li>
+          <li>search</li>
+          <li>favorite</li>
+          <li>cart</li>
+          <li></li>
+        </ul>
       </header>
-      <main>
-        <h2>Category Title</h2>
-        <div>
-          <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product Image" />
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p>Price: $XX.XX</p>
-            <button>Add to Cart</button>
+
+      <!-- el espacio donde aparecen los productos dependiendo la categoria -->
+
+      <main class="productList">
+        <p>categoryProducts</p>
+        <div class="products">
+          <div>
+            <img src="./img/Ejemplo-de-Imagen.jpg" alt="image1" />
+            <p>nameProduct1</p>
+            <p>priceProduct1</p>
+            <button>del</button>
+            <button>+</button>
+            <input type="text" />
+            <button>-</button>
+            <button>add</button>
           </div>
-          <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product Image" />
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p>Price: $XX.XX</p>
-            <div>
-              <button id="showCart">add to cart</button>
-              <div id="cartWindow" class="cart-window">
-                <div class="cart-content">
-                  <!-- Contenido del carrito aquí -->
-                  <h2>Carrito de Compras</h2>
-                  <p>¡Aquí irán los productos agregados!</p>
-                </div>
-                <button id="closeCart">Cerrar Carrito</button>
-              </div>
-            </div>
+          <div>
+            <img src="./img/Ejemplo-de-Imagen.jpg" alt="image2" />
+            <p>nameProduct2</p>
+            <p>priceProduct2</p>
+            <button>add to cart</button>
+          </div>
+          <div>
+            <img src="./img/Ejemplo-de-Imagen.jpg" alt="image3" />
+            <p>nameproduct3</p>
+          </div>
+          <div>
+            <img src="./img/Ejemplo-de-Imagen.jpg" alt="image4" />
+            <p>nameproduct4</p>
+          </div>
+          <div>
+            <img src="./img/Ejemplo-de-Imagen.jpg" alt="image5" />
+            <p>nameproduct5</p>
           </div>
         </div>
       </main>
-      <footer>
-        <p>Copyright by Agustin Belizan</p>
-      </footer>
-    </div>
-    <script>
-      const showCartButton = document.getElementById("showCart");
-      const cartWindow = document.getElementById("cartWindow");
-      const closeCartButton = document.getElementById("closeCart");
 
-      showCartButton.addEventListener("click", () => {
-        cartWindow.style.display = "block";
-      });
-      closeCartButton.addEventListener("click", () => {
-        cartWindow.style.display = "none";
-      });
-    </script>
-    <script src="./js/main.js"></script>
+      <!-- el espacio en donde aparecen los productos que desea el cliente -->
+
+      <aside class="shopCart"><p>cart</p></aside>
+
+      <!-- el pie de página donde figura la información de contacto, ubicación, copyright, etc-->>
+
+      <footer class="info"><p>info</p></footer>
+    </div>
   </body>
 </html>
